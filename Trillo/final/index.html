@@ -1,221 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeply preview</title>
+    <base target="_self">
+    <meta name="description" content="How to make a fixed sidebar and flexible content area layout with Bootstrap 3." />
+    <meta name="google" value="notranslate">
+    <link rel="shortcut icon" href="/images/cp_ico.png">
+
+
+    <!--stylesheets / link tags loaded here-->
+
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
     <body>
-        <div class="container">
-            <header class="header">
-                <img src="img/logo.png" alt="trillo logo" class="logo">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.navbar -->
 
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
-                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                        </svg>
-                    </button>
-                </form>
-
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
-                        </svg>
-                        <span class="user-nav__notification">7</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chat"></use>
-                        </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Jonas</span>
-                    </div>
-                </nav>
-            </header>
-
-
-            <div class="content">
-                <nav class="sidebar">
-                    <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-home"></use>
-                                </svg>
-                                <span>Hotel</span>
-                            </a>
+        <div class="row-offcanvas row-offcanvas-left">
+            <div id="sidebar" class="sidebar-offcanvas">
+                <div class="col-md-12">
+                    <h3>Sidebar (fixed)</h3>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active">
+                            <a href="#">Section</a>
                         </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
-                                </svg>
-                                <span>Flight</span>
-                            </a>
+                        <li>
+                            <a href="#">Section</a>
                         </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-key"></use>
-                                </svg>
-                                <span>Car rental</span>
-                            </a>
+                        <li>
+                            <a href="#">Section</a>
                         </li>
-                        <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-map"></use>
-                                </svg>
-                                <span>Tours</span>
-                            </a>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
+                        </li>
+                        <li>
+                            <a href="#">Section</a>
                         </li>
                     </ul>
-
-                    <div class="legal">
-                        &copy; 2017 by trillo. All rights reserved.
-                    </div>
-                </nav>
-
-
-
-                <main class="hotel-view">
-                    <div class="gallery">
-                        <figure class="gallery__item">
-                            <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
-                        </figure>
-                        <figure class="gallery__item">
-                            <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
-                        </figure>
-                    </div>
-
-                    <div class="overview">
-                        <h1 class="overview__heading">
-                            Hotel Las Palmas
-                        </h1>
-
-                        <div class="overview__stars">
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                            <svg class="overview__icon-star">
-                                <use xlink:href="img/sprite.svg#icon-star"></use>
-                            </svg>
-                        </div>
-
-                        <div class="overview__location">
-                            <svg class="overview__icon-location">
-                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-                            </svg>
-                            <button class="btn-inline">Albufeira, Portugal</button>
-                        </div>
-
-                        <div class="overview__rating">
-                            <div class="overview__rating-average">8.6</div>
-                            <div class="overview__rating-count">429 votes</div>
-                        </div>
-                    </div>
-
-                    <div class="detail">
-                        <div class="description">
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
-                            </p>
-                            <p class="paragraph">
-                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
-                            </p>
-                            <ul class="list">
-                                <li class="list__item">Close to the beach</li>
-                                <li class="list__item">Breakfast included</li>
-                                <li class="list__item">Free airport shuttle</li>
-                                <li class="list__item">Free wifi in all rooms</li>
-                                <li class="list__item">Air conditioning and heating</li>
-                                <li class="list__item">Pets allowed</li>
-                                <li class="list__item">We speak all languages</li>
-                                <li class="list__item">Perfect for families</li>
-                            </ul>
-                            <div class="recommend">
-                                <p class="recommend__count">
-                                    Lucy and 3 other friends recommend this hotel.
-                                </p>
-                                <div class="recommend__friends">
-                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
-                                </div>
+                </div>
+            </div>
+            <div id="main">
+                <div class="col-md-12">
+                    <p class="visible-xs">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </button>
+                    </p>
+                    <h2>Fixed + Fluid Bootstrap Template with Off-canvas Sidebar</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well">
+                                <p>Shrink the browser width to make the sidebar collapse off canvase.</p>
                             </div>
                         </div>
-
-                        <figure class="user-reviews">
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-1.jpg" alt="User 1" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Nick Smith</p>
-                                        <p class="review__user-date">Feb 23rd, 2017</p>
-                                    </div>
-                                    <div class="review__rating">7.8</div>
-                                </figcaption>
-                            </figure>
-
-                            <figure class="review">
-                                <blockquote class="review__text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
-                                </blockquote>
-                                <figcaption class="review__user">
-                                    <img src="img/user-2.jpg" alt="User 1" class="review__photo">
-                                    <div class="review__user-box">
-                                        <p class="review__user-name">Mary Thomas</p>
-                                        <p class="review__user-date">Sept 13th, 2017</p>
-                                    </div>
-                                    <div class="review__rating">9.3</div>
-                                </figcaption>
-                            </figure>
-
-                            <button class="btn-inline">Show all <span>&rarr;</span></button>
-                        </div>
-
-                        <div class="cta">
-                            <h2 class="cta__book-now">
-                                Good news! We have 4 free rooms for your selected dates!
-                            </h2>
-                            <button class="btn">
-                                <span class="btn__visible">Book now</span>
-                                <span class="btn__invisible">Only 4 rooms left</span>
-                            </button>
-                        </div>
-
                     </div>
-
-
-                </main>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="well">
+                                <p>4 cols</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="well">
+                                <p>4 cols</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="well">
+                                <p>4 cols</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="well">
+                                <p>6 cols, 6 small cols</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="well">
+                                <p>6 cols, 6 small cols</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="well">4 cols, 6 small cols</div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="well">4 cols, 6 small cols</div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="well">4 cols, 12 small cols</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+<!--/row-offcanvas -->
     </body>
+<script>
+    // sandbox disable popups if (window.self !== window.top && window.name!="view1") {; window.alert = function(){/*disable
+    alert*/}; window.confirm = function(){/*disable confirm*/}; window.prompt = function(){/*disable prompt*/}; window.open
+    = function(){/*disable open*/}; } // prevent href=# click jump document.addEventListener("DOMContentLoaded", function()
+    { var links = document.getElementsByTagName("A"); for(var i=0; i
+    < links.length; i++) { if(links[i].href.indexOf(
+        '#')!=-1) { links[i].addEventListener( "click", function(e) { console.debug( "prevent href=# click"); if (this.hash) {
+        if (this.hash=="#" ) { e.preventDefault(); return false; } else { /* var el=d ocument.getElementById(this.hash.replace(/#/,
+        "")); if (el) { el.scrollIntoView(true); } */ } } return false; }) } } }, false); </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
